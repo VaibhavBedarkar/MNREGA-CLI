@@ -26,7 +26,8 @@ A project is created by BDO. Project is where people are assigned to. Before ass
 - View total number of days Employee worked in a project and also their wages.
 
 ## Tech-stack
-
-- [Java] - To implement work flow of application
-- [JDBC] - To implement seamless connectivity between Database and Java 
-- [MySQL] - To implement database and store data
+| Tech | Purpose |
+| ------|------ |
+| Java | To implement work flow of application|
+| JDBC | To implement seamless connectivity between Database and Java |
+| MySQL| To implement database and store data |
