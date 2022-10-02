@@ -6,11 +6,8 @@ public class establish {
 
 	public static void main(String[] args) {
 
-		Connection conn= DBUtility.establishConnection();
-		
-		
-		System.out.println(conn);
-
+		Connection conn= DBUtility.establishConnection();	
+	
 	}
 
 }

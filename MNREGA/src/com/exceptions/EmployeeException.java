@@ -1,5 +1,14 @@
 package com.exceptions;
 
-public class EmployeeException {
+public class EmployeeException extends Exception {
 
+	
+	public EmployeeException() {
+	
+	}
+	public EmployeeException(String message) {
+		super(message);
+	}
+
+	
 }
