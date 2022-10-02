@@ -1,59 +1,47 @@
 package com.bean;
 
 public class Employee {
-
 	private int eid;
-	private String pname;
-	private String plocation;
-	private int prate;
-	
+	private String ename;
+	private int emobile;
+	private String location;
 	public Employee() {
-		
+		super();
 	}
-	
-	public Employee(int eid, String pname, String plocation, int prate) {
+	public Employee(int eid, String ename, int emobile, String location) {
 		super();
 		this.eid = eid;
-		this.pname = pname;
-		this.plocation = plocation;
-		this.prate = prate;
+		this.ename = ename;
+		this.emobile = emobile;
+		this.location = location;
 	}
-
 	public int getEid() {
 		return eid;
 	}
-
 	public void setEid(int eid) {
 		this.eid = eid;
 	}
-
-	public String getPname() {
-		return pname;
+	public String getEname() {
+		return ename;
 	}
-
-	public void setPname(String pname) {
-		this.pname = pname;
+	public void setEname(String ename) {
+		this.ename = ename;
 	}
-
-	public String getPlocation() {
-		return plocation;
+	public int getEmobile() {
+		return emobile;
 	}
-
-	public void setPlocation(String plocation) {
-		this.plocation = plocation;
+	public void setEmobile(int emobile) {
+		this.emobile = emobile;
 	}
-
-	public int getPrate() {
-		return prate;
+	public String getLocation() {
+		return location;
 	}
-
-	public void setPrate(int prate) {
-		this.prate = prate;
+	public void setLocation(String location) {
+		this.location = location;
 	}
-
 	@Override
 	public String toString() {
-		return "Employee [eid=" + eid + ", pname=" + pname + ", plocation=" + plocation + ", prate=" + prate + "]";
+		return "Employee [eid=" + eid + ", ename=" + ename + ", emobile=" + emobile + ", location=" + location + "]";
 	}
 	
 	

@@ -13,19 +13,19 @@ import com.exceptions.gpmException;
 
 public interface BDOdao {
 
-	public String bdoLogin(String bdoId, String bdoPassword);
+	public String bdoLogin(String bdoId, String bdoPassword) throws BDOException;
 	
-	public String createProject(String pname, String plocation, int prate);
+	public String createProject(Project project)throws ProjectException;
 	
-	public List<Project> getAllProject() throws BDOException;
+	public List<Project> getAllProject() throws ProjectException;
 	
 	public String registerGPM(GramPanchayat gramPanchayat) throws gpmException;
 
 	public List<GramPanchayat> getAllGPM()throws PanchayatException;
 	
-	public String allocateEmployeeToProject (int eid, int pid, int wage)throws ProjectException,EmployeeException;
+	public String allocateProjectToGPM(int gid, int pid) throws ProjectException, PanchayatException ;
 	
-	public List<Employeedto> getEmployeeByProject(int eid,String ename,String pname, int wage) throws EmployeeException,ProjectException;
+	public List<Employeedto> getEmployeeByProject(int pid) throws EmployeeException,ProjectException;
 	
 	
 

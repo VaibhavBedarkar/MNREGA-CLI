@@ -12,11 +12,11 @@ public interface GPMdao {
 
 	public GramPanchayat loginGPM(String guserid, String gpassword) throws gpmException; 
 	
-	public Employee createrEmployee(Employee employee) throws EmployeeException;
+	public String createrEmployee(Employee employee) throws EmployeeException;
 	
 	public List<Employee> getDetailsOfemployee()throws EmployeeException;
 	
-	public String assignEmployeeToProject() throws EmployeeException,ProjectException;
+	public String allocateEmployeeToProject (int eid, int pid, int wage)throws ProjectException,EmployeeException;
 	
-	public int getDayandWageOfEmployee(int eid) throws EmployeeException,ProjectException;
+	public int getDayandWageOfEmployee(int eid, int pid) throws EmployeeException,ProjectException;
 }
