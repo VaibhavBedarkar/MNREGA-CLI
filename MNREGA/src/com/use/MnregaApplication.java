@@ -347,8 +347,8 @@ public class MnregaApplication{
 							System.out.println("Employee No:"+e.getEid());
 							System.out.println("Employee Name :"+e.getEname());
 							System.out.println("Project Name: "+e.getPname());
-							System.out.println("Days worked: "+e.getWage());
-							System.out.println("Wage worked: "+(e.getWage()*120));
+							System.out.println("Total Days Employee worked for : "+e.getWage());
+							System.out.println("Total Wage: "+(e.getWage()*120));
 							System.out.println("=======================");
 							
 						});					
@@ -363,7 +363,7 @@ public class MnregaApplication{
 				System.out.println("Do you want to continue?(y/n)");
 				cont=scanner.next().charAt(0);
 				
-			}while(cont=='N' ||cont=='n');
+			}while(cont=='Y' ||cont=='y');
 		} catch (BDOException e) {
 			System.out.println(e.getMessage());
 		}
